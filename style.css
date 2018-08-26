@@ -12,7 +12,7 @@ hero h1{
 }
 
 .logo{
-    height: 50px;
+    height: 40px;
     content:url(img/logo.png);
 }
 
@@ -22,8 +22,11 @@ hero h1{
 
 .hero-section {
     width:100%;
-    height:calc(100vh - 75px);
-    background: url('img/headerBG.jpg');
+    height:calc(100vh - 65px);
+    background:  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url('img/headerBG.jpg');
+    /*background: #1f1f1f;*/
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -44,4 +47,75 @@ hero h1{
 
 .hero-button{
     margin-top: 20px;
+}
+
+.btn-primary{
+    background-color: #1f1f1f;
+    border-color: orange;
+}
+
+.btn-primary:hover{
+    background-color: orange;
+    border-color: orange;
+    transition: ease-in 0.2s;
+}
+
+.navbar{
+    background-color: #1f1f1f;
+    /*background-color: rgba(0,0,0,0.4);*/
+    
+}
+
+.nav-link {
+    color: white !important;
+    
+}
+
+.education-section{
+    margin-top: 40px;
+    background-color: #f6f3ee;
+}
+
+.experience-section{
+    margin-top: 40px;
+}
+
+.education-heading{
+    margin-top: 40px;
+}
+
+.about-section{
+    margin-top: 50px;
+}
+
+.uog-icon{
+    content:url(img/uog-icon.png);
+    height: 120px;
+    margin-top: 40px;
+}
+
+.muic-icon{
+    content:url(img/muic-icon.png);
+    height: 120px;
+    margin-top: 40px;
+}
+
+.lead{
+    width: 70%;
+    margin-left:15%;
+}
+
+hr {
+    height: 1px;
+    background-color:#555;
+    width: 100%;
+}
+
+.hr-heading {
+    height: 1px;
+    background-color:#555;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 30%;
+    margin-left:35%;
 }

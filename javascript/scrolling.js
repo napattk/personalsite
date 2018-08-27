@@ -9,3 +9,12 @@ $(document).ready(function(){
     } 
   });
 });
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    var $hero = $(".hero-section");
+
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height());
+  });
+});

@@ -16,6 +16,7 @@ hero h1{
     height: 40px;
     content:url(img/logo.png);
 }
+
 .logo-large{
     margin-top: 200px;
     height: 180px;
@@ -29,18 +30,30 @@ hero h1{
 
 .navbar{
     /*background-color: #1f1f1f;*/
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.2);
     font-family: 'Exo', sans-serif;
     margin-top: -66px;
     width:100%;
+    transition: ease-out 0.5s;
+}
+
+.navbar.scrolled{
+    background-color: #333;
+    transition: ease-in 0.5s;
 }
 .navbar-nav li{
     padding-right: 10px;
 
 }
-.nav-link {
+
+.nav-link:hover{
+    color: orange !important;
+    transition: ease-in 0.3s;
+}
+
+.nav-link{
     color: white !important;
-    font-size: 18px;
+    transition: ease-out 0.3;
 }
 
 /* Hero */

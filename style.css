@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    
+
 }
 
 hero h1{
@@ -22,9 +22,7 @@ hero h1{
     height: 180px;
     content:url(img/logo.png);
 }
-.header-image{
-    content:url(img/headerBG.jpg);
-}
+
 
 /* Navigation Bar */
 
@@ -65,7 +63,6 @@ hero h1{
     background:  
         linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
         url('img/headerBG.jpg');
-    /*background: #1f1f1f;*/
     background-repeat: no-repeat;
     background-position: centerop;
     background-size:cover;
@@ -128,20 +125,53 @@ i.down:hover{
 /*About sections*/
 
 .about-section{
-    padding-top: 50px;
     width: 70%;
-    padding-top: 10px;
+    padding-top: 40px !important;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.about-section-background{
+    background-color: #1a1a1a;
 }
 
 .education-section{
     padding-top: 20px;
-    background-color: white;
+
+    background:  
+    linear-gradient(rgba(201, 201, 201, 0.8),rgba(255, 255, 255, 0.1)),
+    url('img/bodyBG2.jpg');
+    
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: initial;
+    color:black;
 }
+.education-section h5{
+    padding-bottom: 70px;
+}
+
 .education-section h5{
     padding-bottom: 70px;
 }
 .experience-section{
     padding-top: 40px;
+    padding-bottom: 40px;
+    background:  
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('img/bodyBG.jpg');
+   
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:cover;
+    background-attachment: initial;
+    color:white;
+}
+
+.experience-section i{
+    padding-top: 30px ;
 }
 
 .uog-icon{

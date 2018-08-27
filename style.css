@@ -184,6 +184,7 @@ hr {
 .fa-github, .fa-linkedin, .fa-phone, .fa-at{
     color:orange;
     font-size: 25px;
+    padding-bottom: 15px;
 }
 
 footer{
@@ -196,7 +197,7 @@ footer{
 .contacts-text,.contacts-header {
     color: white;
     padding-left: 15px;
-    
+    vertical-align: middle;
     font-size:25px;
     font-family: 'Exo', sans-serif;
 }

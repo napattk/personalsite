@@ -8,6 +8,7 @@
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/popper.js/dist/popper-utils.min.js"></script>
 		<script src="node_modules/bootstrap/dist//js/bootstrap.bundle.min.js"></script>
+		<script src="javascript/scrolling.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -17,7 +18,7 @@
 	<body>
 		
 		<!-- Navigation Bar-->
-		<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top" id ="navbar">
 			<div class ="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img class ="logo">
@@ -33,10 +34,10 @@
 							<a class="nav-link" href="#about-section">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Education</a>
+							<a class="nav-link" href="#resume-section">Resume</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Experience</a>
+							<a class="nav-link" href="#education-section">Education</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#contact-section">Contact</a>
@@ -56,7 +57,9 @@
 					<h6>  </h6>
 
 					<div class="footer">
-						<i class="down" href="#about-section"></i>
+						<a href="#about-section">
+							<i class="down" ></i>
+						</a>
 					</div>
 					
 					<!--
@@ -70,7 +73,7 @@
 	
 
 		<!-- About Section -->
-		<div class="about-section container-fluid padding"id="about-section">
+		<div class="about-section container-fluid padding" id="about-section">
 			<div class="row text-center">
 				<div class="col-12">
 					<h1 class="display-4">About me</h1>
@@ -89,7 +92,9 @@
 			</div>
 		</div>
 
-		<div class = "container-fluid padding">
+		<!-- Resume Section -->
+
+		<div class = "container-fluid padding" id="resume-section">
 			<div class="resume-section row text-center padding">
 				<div class="col-12">
 					<h3>Check out my resume: </h3>
@@ -100,7 +105,7 @@
 
 		<!-- Education Section -->
 
-		<div class ="education-section container-fluid padding">
+		<div class ="education-section container-fluid padding" id="education-section">
 			<div class="row text-center padding">
 
 				<div class="col-12">
@@ -147,7 +152,7 @@
 		</div>
 		-->
 
-		<!-- Resume Section -->
+
 
 	
 

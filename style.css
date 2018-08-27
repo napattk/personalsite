@@ -74,6 +74,9 @@ hero h1{
     padding-top: 5px;
     text-shadow: 1px 1px 10px black;
 }
+.hero-section a{
+    color: orange;
+}
 .hero-button{
     padding-top: 5px;
 }

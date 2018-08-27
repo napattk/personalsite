@@ -1,10 +1,11 @@
-*{ /*Applies to all*/
+*{
     margin:0;
     padding:0;
 }
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 hero h1{
@@ -16,8 +17,8 @@ hero h1{
     content:url(img/logo.png);
 }
 .logo-large{
-    margin-top: 70px;
-    height: 160px;
+    margin-top: 200px;
+    height: 180px;
     content:url(img/logo.png);
 }
 .header-image{
@@ -28,11 +29,14 @@ hero h1{
 
 .navbar{
     /*background-color: #1f1f1f;*/
-    background-color: rgba(0,0,0,0.2);
-    
+    background-color: rgba(0,0,0,0.7);
+    font-family: 'Exo', sans-serif;
+    margin-top: -66px;
+    width:100%;
 }
 .navbar-nav li{
     padding-right: 10px;
+
 }
 .nav-link {
     color: white !important;
@@ -43,7 +47,8 @@ hero h1{
 
 .hero-section {
     width:100%;
-    height:500px;
+    height:100vh;
+    min-height: 600px;
     background:  
         linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
         url('img/headerBG.jpg');
@@ -53,22 +58,26 @@ hero h1{
     background-size:cover;
     background-attachment: fixed;
     color:white;
-    text-shadow:2px 2px #333;
     text-align: center;
+    font-family: 'Exo', sans-serif;
+    
 }
 .hero-section h1 {
-    margin-top: 30px;
+    padding-top: 30px;
     font-size: 50px;
     text-transform: uppercase;
+    text-shadow:2px 2px #333;
     text-shadow: 3px 3px 20px black;
+    letter-spacing: 4px;
 }
 .hero-section h5 {
-    margin-top: 5px;
+    padding-top: 5px;
     text-shadow: 1px 1px 10px black;
 }
 .hero-button{
-    margin-top: 5px;
+    padding-top: 5px;
 }
+
 .btn-primary{
     background-color: #1f1f1f;
     border: 1px solid orange;
@@ -79,38 +88,54 @@ hero h1{
     transition: ease-in 0.3s;
 }
 
-/*Sub sections*/
+i.down{
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 12px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: ease-out 0.3s;
+}
+
+i.down:hover{
+    border: solid ;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: ease-in 0.3s;
+    
+}
+
+/*About sections*/
 
 .about-section{
-    margin-top: 50px;
+    padding-top: 50px;
     width: 70%;
     padding-top: 10px;
-
-}
-.education-heading{
-    margin-top: 40px;
 }
 
 .education-section{
-    margin-top: 40px;
-    background-color: #f6f3ee;
+    padding-top: 20px;
+    background-color: white;
 }
 .education-section h5{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 .experience-section{
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .uog-icon{
     content:url(img/uog-icon.png);
     height: 120px;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .muic-icon{
     content:url(img/muic-icon.png);
     height: 120px;
-    margin-top: 40px;
 }
 
 hr {
@@ -125,6 +150,14 @@ hr {
     margin-bottom: 50px;
     width: 30%;
     margin-left:35%;
+}
+
+/*Resume section*/
+
+.resume-section{
+    background-color:orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Connect */
@@ -154,17 +187,18 @@ footer{
     background-color: #333;
     padding-top: 30px;
     padding-bottom: 30px;
+
 }
 
-footer span{
+.contacts-text,.contacts-header {
     color: white;
-    margin-left: 15px;
+    padding-left: 15px;
     
     font-size:25px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
-footer span:hover{
+.contacts-text:hover{
     color:orange;
     transition: ease-in 0.2s;
 }
@@ -182,6 +216,4 @@ footer span:hover{
     margin-bottom: 30px;
     width: 40%;
     margin-left: 30%;
-    
-    
 }

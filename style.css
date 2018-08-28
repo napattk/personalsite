@@ -4,7 +4,6 @@
 
 }
 
-
 body{
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
@@ -33,7 +32,7 @@ hero h1{
 }
 
 .logo-large{
-    margin-top: 5%;
+    margin-top: 20%;
     margin-bottom: 50px;
     height: 250px;
     content:url(img/logo.gif);
@@ -48,6 +47,7 @@ hero h1{
     font-family: 'Exo', sans-serif;
     width:100%;
     transition: ease-out 0.5s;
+    position: fixed;
 }
 
 .navbar.scrolled{

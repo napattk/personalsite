@@ -228,19 +228,6 @@ i.down:hover{
     margin-left: 30%;
 }
 
-/* Page Footer*/
-
-.page-footer{
-    background:  
-        linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.50)),
-        url('img/headerBG.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        background-attachment: scroll;
-        height: 15vh;
-}
-
 
 /* Misc */
 hr {

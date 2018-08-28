@@ -35,7 +35,7 @@ hero h1{
     margin-top: 20%;
     margin-bottom: 50px;
     height: 250px;
-    content:url(img/logo.gif);
+    /*content:url(img/logo.gif);*/
 }
 
 
@@ -79,18 +79,35 @@ hero h1{
     font-family: 'Exo', sans-serif;
     
 }
-.hero-section h1 {
+
+.hero-section-header {
     font-size: 50px;
     text-transform: uppercase;
+}
+
+.hero-section-header-expanded {
     text-shadow:2px 2px #333;
     text-shadow: 3px 3px 10px black;
-    letter-spacing: 4px;
-    padding-top: 20px;
+    letter-spacing: 12px;
+    padding-top: 15px;
+
+    color: white;
+    transition: ease-in 1.5s;
 }
-.hero-section h5 {
-    padding-top: 5px;
+
+.hero-section-subheader {
+    letter-spacing: 2px;
+}
+
+.hero-section-subheader-expanded {
     text-shadow: 1px 1px 10px black;
+    letter-spacing: 6px;
+    padding-bottom: 30px;
+    transition: ease-in 1.5s;
 }
+
+
+
 .hero-section a{
     color: orange;
 }

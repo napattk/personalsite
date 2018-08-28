@@ -5,6 +5,9 @@
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
 
 }
 
@@ -18,9 +21,10 @@ hero h1{
 }
 
 .logo-large{
-    margin-top: 200px;
-    height: 180px;
-    content:url(img/logo.png);
+    margin-top: 120px;
+    margin-bottom: 50px;
+    height: 250px;
+    content:url(img/logo.gif);
 }
 
 
@@ -58,8 +62,8 @@ hero h1{
 
 .hero-section {
     width:100%;
-    height:100vh;
-    min-height: 600px;
+    height:100vh !important;
+    min-height: 700px;
     background:  
         linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
         url('img/headerBG.jpg');
@@ -73,7 +77,6 @@ hero h1{
     
 }
 .hero-section h1 {
-    padding-top: 30px;
     font-size: 50px;
     text-transform: uppercase;
     text-shadow:2px 2px #333;
@@ -137,12 +140,10 @@ i.down:hover{
 
 .education-section{
     padding-top: 20px;
-
     background:  
     linear-gradient(rgba(201, 201, 201, 0.8),rgba(255, 255, 255, 0.1)),
     url('img/bodyBG2.jpg');
     
-
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -153,9 +154,6 @@ i.down:hover{
     padding-bottom: 70px;
 }
 
-.education-section h5{
-    padding-bottom: 70px;
-}
 .experience-section{
     padding-top: 40px;
     padding-bottom: 40px;

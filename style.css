@@ -3,41 +3,15 @@
     padding:0;
 
 }
-
 body{
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
-    height:120vh !important;
-
-    background:  
-        linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-        url('img/headerBG.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
-        background-attachment: fixed;
+    height: 100vh !important;
+        
 }
-
 .wrapper{
     overflow-x: hidden;
 }
-
-hero h1{
-    text-align: center;
-}
-
-.logo{
-    height: 40px;
-    content:url(img/logo.png);
-}
-
-.logo-large{
-    margin-top: 20%;
-    margin-bottom: 50px;
-    height: 250px;
-    /*content:url(img/logo.gif);*/
-}
-
 
 /* Navigation Bar */
 
@@ -49,42 +23,52 @@ hero h1{
     transition: ease-out 0.5s;
     position: fixed;
 }
-
 .navbar.scrolled{
     background-color: #333;
     transition: ease-in 0.5s;
 }
-
-
+.logo{
+    height: 40px;
+    content:url(img/logo.png);
+}
 .nav-link:hover{
     color: orange !important;
     transition: ease-in 0.3s;
 }
-
 .nav-link{
     color: white !important;
     transition: ease-out 0.3;
 }
 
 /* Hero */
-
 .hero-section {
     width:100%;
 
-    height:100vh !important;
+    height: 100vh !important;
     min-height: 700px;
+
+    background:  
+    linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.90)),
+    url('img/headerBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     
     color:white;
     text-align: center;
     font-family: 'Exo', sans-serif;
     
 }
-
+.logo-large{
+    margin-top: 20%;
+    height: 250px;
+}
 .hero-section-header {
     font-size: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
-
 .hero-section-header-expanded {
     text-shadow:2px 2px #333;
     text-shadow: 3px 3px 10px black;
@@ -94,37 +78,18 @@ hero h1{
     color: white;
     transition: ease-in 1.5s;
 }
-
 .hero-section-subheader {
     letter-spacing: 2px;
 }
-
 .hero-section-subheader-expanded {
     text-shadow: 1px 1px 10px black;
     letter-spacing: 6px;
     padding-bottom: 30px;
     transition: ease-in 1.5s;
 }
-
-
-
 .hero-section a{
     color: orange;
 }
-.hero-button{
-    padding-top: 5px;
-}
-
-.btn-primary{
-    background-color: #1f1f1f;
-    border: 1px solid orange;
-}
-.btn-primary:hover{
-    background-color: orange;
-    border: 1px solid orange;
-    transition: ease-in 0.3s;
-}
-
 i.down{
     border: solid white;
     border-width: 0 1px 1px 0;
@@ -134,7 +99,6 @@ i.down{
     -webkit-transform: rotate(45deg);
     transition: ease-out 0.3s;
 }
-
 i.down:hover{
     border: solid ;
     border-width: 0 3px 3px 0;
@@ -146,7 +110,7 @@ i.down:hover{
     
 }
 
-/*About sections*/
+/*About section*/
 
 .about-section{
     width: 80%;
@@ -159,6 +123,8 @@ i.down:hover{
     background-color: #1a1a1a;
 }
 
+/*Education sections*/
+
 .education-section{
     padding-top: 20px;
     background:  
@@ -168,13 +134,23 @@ i.down:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    background-attachment: initial;
+    background-attachment: fixed;
     color:black;
 }
 .education-section h5{
     padding-bottom: 70px;
 }
+.uog-icon{
+    content:url(img/uog-icon.png);
+    height: 120px;
+    padding-top: 40px;
+}
+.muic-icon{
+    content:url(img/muic-icon.png);
+    height: 120px;
+}
 
+/*Experience Section*/
 .experience-section{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -188,21 +164,85 @@ i.down:hover{
     background-attachment: initial;
     color:white;
 }
-
 .experience-section i{
     padding-top: 30px ;
 }
 
-.uog-icon{
-    content:url(img/uog-icon.png);
-    height: 120px;
-    padding-top: 40px;
+
+
+/*Resume section*/
+
+.resume-section{
+    background-color:orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.muic-icon{
-    content:url(img/muic-icon.png);
-    height: 120px;
+.btn-primary{
+    background-color: #1f1f1f;
+    border: 1px solid orange;
+}
+.btn-primary:hover{
+    background-color: orange;
+    border: 1px solid orange;
+    transition: ease-in 0.3s;
 }
 
+/* Connect */
+
+.fa-github, .fa-linkedin, .fa-phone, .fa-at{
+    color:orange;
+    font-size: 23px;
+    padding-bottom: 15px;
+}
+.contact-section{
+    background-color: #333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.contacts-text,.contacts-text2,.contacts-header {
+    color: white;
+    padding-left: 15px;
+    vertical-align: middle;
+    font-size:23px;
+    font-family: 'Exo', sans-serif;
+}
+.contacts-text2{
+    font-size:20px;
+}
+.contacts-text:hover{
+    color:orange;
+    transition: ease-in 0.2s;
+}
+.contact-list{
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+}
+.contact-section hr{
+    height: 1px;
+    background-color:#555;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+/* Page Footer*/
+
+.page-footer{
+    background:  
+        linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.50)),
+        url('img/headerBG.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 15vh;
+}
+
+
+/* Misc */
 hr {
     height: 1px;
     background-color:#555;
@@ -215,75 +255,4 @@ hr {
     margin-bottom: 50px;
     width: 30%;
     margin-left:35%;
-}
-
-/*Resume section*/
-
-.resume-section{
-    background-color:orange;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/* Connect */
-
-.fa-github{
-    color: black;
-}
-
-.fa-linkedin{
-    color: #0077b5;
-}
-
-.fa-phone{
-    color:green
-}
-
-.fa-at{
-    color:red;
-}
-
-.fa-github, .fa-linkedin, .fa-phone, .fa-at{
-    color:orange;
-    font-size: 23px;
-    padding-bottom: 15px;
-}
-
-footer{
-    background-color: #333;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-
-.contacts-text,.contacts-text2,.contacts-header {
-    color: white;
-    padding-left: 15px;
-    vertical-align: middle;
-    font-size:23px;
-    font-family: 'Exo', sans-serif;
-}
-
-.contacts-text2{
-    font-size:20px;
-}
-
-.contacts-text:hover{
-    color:orange;
-    transition: ease-in 0.2s;
-}
-
-.contact-list{
-    display: inline-block;
-    text-align: left;
-    list-style: none;
-}
-
-.contact-section hr{
-    height: 1px;
-    background-color:#555;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    width: 40%;
-    margin-left: 30%;
 }

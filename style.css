@@ -122,6 +122,17 @@ i.down:hover{
 .about-section-background{
     background-color: #1a1a1a;
 }
+.about-header,.about-body{
+    color: rgba(255, 255, 255, 0);
+}
+.about-header-viewed{
+    color: rgb(255, 255, 255,1);
+    transition: ease-in 0.5s;
+}
+.about-body-viewed{
+    color: rgb(255, 255, 255,1);
+    transition: ease-in 1.5s;
+}
 
 /*Education sections*/
 
@@ -140,6 +151,18 @@ i.down:hover{
 .education-section h5{
     padding-bottom: 70px;
 }
+.education-header,.education-body{
+    color: rgba(0, 0, 0, 0);
+}
+.education-header-viewed{
+    color: rgba(0, 0, 0, 1);
+    transition: ease-in 0.5s;
+}
+.education-body-viewed{
+    color: rgba(0, 0, 0, 1);
+    transition: ease-in 1.5s;
+}
+
 .uog-icon{
     content:url(img/uog-icon.png);
     height: 120px;
@@ -166,6 +189,18 @@ i.down:hover{
 }
 .experience-section i{
     padding-top: 30px ;
+}
+
+.experience-header,.experience-body{
+    color: rgba(255, 255, 255, 0);
+}
+.experience-header-viewed{
+    color: rgb(255, 255, 255,1);
+    transition: ease-in 0.5s;
+}
+.experience-body-viewed{
+    color: rgb(255, 255, 255,1);
+    transition: ease-in 1.5s;
 }
 
 
